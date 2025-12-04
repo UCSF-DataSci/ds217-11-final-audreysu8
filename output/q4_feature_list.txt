@@ -1,0 +1,14 @@
+season
+Wind Speed Squared
+Is Raining
+Gust Factor
+Wind Direction X
+Wind Direction Y
+Rain Intensity x Humidity
+Humidity Level
+Sin_Hour
+Cos_Hour
+barometric_pressure_rolling_mean_7h
+humidity_rolling_mean_7h
+solar_radiation_rolling_mean_7h
+total_rain_rolling_mean_24h

@@ -1,0 +1,67 @@
+Data Cleaning Report
+====================
+
+Number of rows before cleaning: 196313
+Missing Data Handling:
+ - Air Temperature: 75 (0.0)%
+Method: Forward Fill
+Result: all missing values filled
+ - Wet Bulb Temperature: 75947 (0.4)%
+Method: Forward Fill
+Result: all missing values filled
+ - Rain Intensity: 75947 (0.4)%
+Method: Forward Fill
+Result: all missing values filled
+ - Total Rain: 75947 (0.4)%
+Method: Forward Fill
+Result: all missing values filled
+ - Precipitation Type: 75947 (0.4)%
+Method: Forward Fill
+Result: all missing values filled
+ - Barometric Pressure: 146 (0.0)%
+Method: Forward Fill
+Result: all missing values filled
+ - Heading: 75947 (0.4)%
+Method: Forward Fill
+Result: all missing values filled
+Outlier Handling:
+ - Air Temperature: 296 outliers handled using Z-score method (using 3 z-scores)
+Method: Capped at 3 standard deviations from the mean.
+Number of rows handled: 296
+ - Wet Bulb Temperature: 487 outliers handled using Z-score method (using 3 z-scores)
+Method: Capped at 3 standard deviations from the mean.
+Number of rows handled: 487
+ - Humidity: 134 outliers handled using Z-score method (using 3 z-scores)
+Method: Capped at 3 standard deviations from the mean.
+Number of rows handled: 134
+ - Rain Intensity: 1434 outliers handled using Z-score method (using 3 z-scores)
+Method: Capped at 3 standard deviations from the mean.
+Number of rows handled: 1434
+ - Interval Rain: 2298 outliers handled using Z-score method (using 3 z-scores)
+Method: Capped at 3 standard deviations from the mean.
+Number of rows handled: 2298
+ - Total Rain: 4023 outliers handled using Z-score method (using 3 z-scores)
+Method: Capped at 3 standard deviations from the mean.
+Number of rows handled: 4023
+ - Precipitation Type: 12657 outliers handled using Z-score method (using 3 z-scores)
+Method: Capped at 3 standard deviations from the mean.
+Number of rows handled: 12657
+ - Wind Speed: 27 outliers handled using Z-score method (using 3 z-scores)
+Method: Capped at 3 standard deviations from the mean.
+Number of rows handled: 27
+ - Maximum Wind Speed: 20 outliers handled using Z-score method (using 3 z-scores)
+Method: Capped at 3 standard deviations from the mean.
+Number of rows handled: 20
+ - Barometric Pressure: 87 outliers handled using Z-score method (using 3 z-scores)
+Method: Capped at 3 standard deviations from the mean.
+Number of rows handled: 87
+ - Solar Radiation: 13 outliers handled using Z-score method (using 3 z-scores)
+Method: Capped at 3 standard deviations from the mean.
+Number of rows handled: 13
+ - Battery Life: 6 outliers handled using Z-score method (using 3 z-scores)
+Method: Capped at 3 standard deviations from the mean.
+Number of rows handled: 6
+Number of duplicate rows removed: 0
+Data Type Conversions:
+ - 'Measurement Timestamp' converted to datetime64[ns]
+Number of rows after cleaning: 196313
