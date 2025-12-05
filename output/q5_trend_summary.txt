@@ -1,0 +1,15 @@
+KEY PATTERNS IDENTIFIED:
+TEMPORAL TRENDS:
+- Monthly average solar radiation shows seasonal patterns- Higher solar radiation in summer months (June to August)
+- Lower solar radiation in winter months (December to February)
+- Monthly solar radiation range: 24.5 to 238.3 watts per square meter
+DAILY PATTERNS:
+ - Wind speed tends to be higher from around 9 AM to 6 PM
+ - Wind speed achieves peak at around 3 PM
+ - Minimum wind speed occurs at midnight
+ - Humidity tends to be higher from midnight to 10 AM
+ - Humidity achieves peak at around 6 AM
+ - Minimum humidity occurs at around 4 PM
+CORRELATIONS:
+- Air Temp vs Water Temp: 0.83 (strong positive correlation)
+- Air Temp vs Is Summer: 0.62 (moderate positive correlation)

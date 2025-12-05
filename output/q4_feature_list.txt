@@ -1,11 +1,13 @@
-season
 Wind Speed Squared
 Is Raining
-Gust Factor
+Is Summer
+Is Winter
+Is Spring
+Is Fall
+Maximum Wind Speed - Wind Speed
 Wind Direction X
 Wind Direction Y
 Rain Intensity x Humidity
-Humidity Level
 Sin_Hour
 Cos_Hour
 barometric_pressure_rolling_mean_7h
