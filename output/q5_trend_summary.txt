@@ -5,9 +5,9 @@ TEMPORAL TRENDS:
 - Monthly solar radiation range: 24.5 to 238.3 watts per square meter
 DAILY PATTERNS:
  - Wind speed tends to be higher from around 9 AM to 6 PM
- - Wind speed achieves peak at around 3 PM
+ - Wind speed achieves peak at around 1 PM
  - Minimum wind speed occurs at midnight
- - Humidity tends to be higher from midnight to 10 AM
+ - Humidity tends to be higher from midnight to 9 AM
  - Humidity achieves peak at around 6 AM
  - Minimum humidity occurs at around 4 PM
 CORRELATIONS:

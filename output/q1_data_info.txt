@@ -21,7 +21,7 @@ Column Names:
 
 Data Types:
  - Station Name: object
- - Measurement Timestamp: datetime64[ns]
+ - Measurement Timestamp: object
  - Air Temperature: float64
  - Wet Bulb Temperature: float64
  - Humidity: int64
@@ -39,7 +39,7 @@ Data Types:
  - Measurement Timestamp Label: object
  - Measurement ID: object
 
-Date Range: 2015-04-25 09:00:00 to 2025-12-03 10:00:00
+Date Range: 01/01/2016 01:00:00 AM to 12/31/2024 12:00:00 PM
 
 Missing Values per Column:
  - Station Name: 0 (0.0)%
