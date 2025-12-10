@@ -1,11 +1,12 @@
 KEY FINDINGS SUMMARY:
 MODEL PERFORMANCE:
-- Best performing model: Random Forest Regresor (R² Score = 0.736717, RMSE = 26.997480, MAE = 3.743533)
+- Best performing model: Random Forest Regresor (R² Score = 0.736717, RMSE = 5.195910, MAE = 3.743533)
 - Random Forest Regressor outperforms Linear Regression for all three error metrics- Random Forest Regressor achieves R² Score closer to 1, smaller RMSE, and smaller MAE
 FEATURE IMPORTANCE:
-- Most important feature: Is Summer (importance: 0.44533)
-- Top 3 features account for 83.15306% of total importance
-- Features corresponding to/derivative of total rain, solar radiation, humidity, wind direction also have high feature importance- Temporal features (Is Summer, month) are highly important
+- Most important feature: Is Summer (importance: 0.44530)
+- Top 3 features account for 88.33000% of total importance
+- Features corresponding to/derivative of total rain, solar radiation, humidity, wind direction also have high feature importance
+- Temporal features (Is Summer, month) are highly important
 TEMPORAL PATTERNS:
 - Air Temperature follows seasonal patterns
 - important predictors are 'Is Summer', 'month', 'year', 'day_of_week'

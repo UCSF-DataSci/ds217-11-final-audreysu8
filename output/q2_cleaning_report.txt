@@ -25,29 +25,29 @@ Result: all missing values filled
 Method: Forward Fill
 Result: all missing values filled
 Outlier Handling:
- - Air Temperature: 296 outliers detected using Z-score method (using 3 z-scores)
+ - Air Temperature: 296 outliers detected using z-score method (defining outlier as datapoint with absolute value of z-score greater than three)
 Method: Capped at 3 standard deviations from the mean.
-Number of outliers handled: 296 - Wet Bulb Temperature: 487 outliers detected using Z-score method (using 3 z-scores)
+Number of outliers handled: 296 - Wet Bulb Temperature: 487 outliers detected using z-score method (defining outlier as datapoint with absolute value of z-score greater than three)
 Method: Capped at 3 standard deviations from the mean.
-Number of outliers handled: 487 - Humidity: 134 outliers detected using Z-score method (using 3 z-scores)
+Number of outliers handled: 487 - Humidity: 134 outliers detected using z-score method (defining outlier as datapoint with absolute value of z-score greater than three)
 Method: Capped at 3 standard deviations from the mean.
-Number of outliers handled: 134 - Rain Intensity: 1434 outliers detected using Z-score method (using 3 z-scores)
+Number of outliers handled: 134 - Rain Intensity: 1434 outliers detected using z-score method (defining outlier as datapoint with absolute value of z-score greater than three)
 Method: Capped at 3 standard deviations from the mean.
-Number of outliers handled: 1434 - Interval Rain: 2298 outliers detected using Z-score method (using 3 z-scores)
+Number of outliers handled: 1434 - Interval Rain: 2298 outliers detected using z-score method (defining outlier as datapoint with absolute value of z-score greater than three)
 Method: Capped at 3 standard deviations from the mean.
-Number of outliers handled: 2298 - Total Rain: 4023 outliers detected using Z-score method (using 3 z-scores)
+Number of outliers handled: 2298 - Total Rain: 4023 outliers detected using z-score method (defining outlier as datapoint with absolute value of z-score greater than three)
 Method: Capped at 3 standard deviations from the mean.
-Number of outliers handled: 4023 - Precipitation Type: 12657 outliers detected using Z-score method (using 3 z-scores)
+Number of outliers handled: 4023 - Precipitation Type: 12657 outliers detected using z-score method (defining outlier as datapoint with absolute value of z-score greater than three)
 Method: Capped at 3 standard deviations from the mean.
-Number of outliers handled: 12657 - Wind Speed: 27 outliers detected using Z-score method (using 3 z-scores)
+Number of outliers handled: 12657 - Wind Speed: 27 outliers detected using z-score method (defining outlier as datapoint with absolute value of z-score greater than three)
 Method: Capped at 3 standard deviations from the mean.
-Number of outliers handled: 27 - Maximum Wind Speed: 20 outliers detected using Z-score method (using 3 z-scores)
+Number of outliers handled: 27 - Maximum Wind Speed: 20 outliers detected using z-score method (defining outlier as datapoint with absolute value of z-score greater than three)
 Method: Capped at 3 standard deviations from the mean.
-Number of outliers handled: 20 - Barometric Pressure: 87 outliers detected using Z-score method (using 3 z-scores)
+Number of outliers handled: 20 - Barometric Pressure: 87 outliers detected using z-score method (defining outlier as datapoint with absolute value of z-score greater than three)
 Method: Capped at 3 standard deviations from the mean.
-Number of outliers handled: 87 - Solar Radiation: 13 outliers detected using Z-score method (using 3 z-scores)
+Number of outliers handled: 87 - Solar Radiation: 13 outliers detected using z-score method (defining outlier as datapoint with absolute value of z-score greater than three)
 Method: Capped at 3 standard deviations from the mean.
-Number of outliers handled: 13 - Battery Life: 6 outliers detected using Z-score method (using 3 z-scores)
+Number of outliers handled: 13 - Battery Life: 6 outliers detected using z-score method (defining outlier as datapoint with absolute value of z-score greater than three)
 Method: Capped at 3 standard deviations from the mean.
 Number of outliers handled: 6Number of duplicate rows removed: 0
 Data Type Conversions:
