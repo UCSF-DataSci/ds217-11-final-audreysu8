@@ -156,8 +156,8 @@ I applied feature engineering on the dataset to extract additional variables in 
 
 - Wind Direction Y: y-coordinate of wind direction, calculated by $$\text{Wind Direction Y} = \text{Wind Speed}  \cdot \sin\left(\text{Wind Direction} \cdot \frac{\pi}{180}\right)$$
 - Rain Intensity x Humidity: captures the interaction between rain intensity and humidity, calculated by multiplying values in Rain Intensity column by corresponding value in same row in Humidity column
-- Sin_Hour: sine transform of hour in day in order to encode hour of day into a cyclical value, calculated by $$\text{Sin_Hour} =  \sin\left( 2 \pi \frac{\text{hour}}{24} \right)$$
-- Cos_Hour: cosine transform of hour in day in order to encode hour of day into a cyclical value, calculated by $$\text{Cos_Hour} =  \cos\left( 2 \pi \frac{\text{hour}}{24} \right)$$
+- Sin_Hour: sine transform of hour in day in order to encode hour of day into a cyclical value, calculated by $$\text{Sin_Hour} =  \sin\left(2 \pi \cdot \frac{\text{hour}}{24} \right)$$
+- Cos_Hour: cosine transform of hour in day in order to encode hour of day into a cyclical value, calculated by $$\text{Cos_Hour} =  \cos\left(2 \pi \cdot \frac{\text{hour}}{24} \right)$$
 
 **Rolling Window Features:**
 
@@ -270,17 +270,18 @@ We notice that the variables "Is Summer" and "month" together account for 83.15%
 From the residuals plots, we can see that the residuals for both models are fairly evenly and randomly spread. However, for both models, there are some points at the left end that aren't near the other points on the plot. Furthermore, both plots take on a "funnel shape", with the bottom of the funnel pointing to the right. This means that both plots exhibit heteroscedasticity. It is important to note that the residuals plot for Random Forest Regressor is stronger than the Linear Regression residuals plot.
 
 **Key Findings:**
-*Model Performance*:
+
+**Model Performance**:
 - The best performing model is Random Forest Regressor (R² Score = 0.73672, RMSE = 5.19591, MAE = 3.74353)
-*Feature Performance*:
+**Feature Performance**:
 - The top two most important features are "Is Summer" and "month", which are temporal features
 - Rolling window variables also have high importance
-*Temporal Patterns*:
+**Temporal Patterns**:
 - Air Temperature follows strong seasonal patterns
 - Air Temperature also follows daily and weekly cycles
-*Feature Engineering*:
+**Feature Engineering**:
 - Feature engineering is essential for generating strong predictions of Air Temperature using information recorded by Chicago beach weather sensors
-*Data Quality*
+**Data Quality**
 - Data cleaning was applied to the dataset to help to ensure data is reliable while also preserving original size of data
 
 ### 3. Visualizations (at least 5 figures with captions)
