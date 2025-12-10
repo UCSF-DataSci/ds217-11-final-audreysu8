@@ -157,6 +157,7 @@ I applied feature engineering on the dataset to extract additional variables in 
 - Wind Direction Y: y-coordinate of wind direction, calculated by $$\text{Wind Direction Y} = \text{Wind Speed}  \cdot \sin\left(\text{Wind Direction} \cdot \frac{\pi}{180}\right)$$
 - Rain Intensity x Humidity: captures the interaction between rain intensity and humidity, calculated by multiplying values in Rain Intensity column by corresponding value in same row in Humidity column
 - Sin_Hour: sine transform of hour in day in order to encode hour of day into a cyclical value, calculated by $$\text{Sin_Hour} =  \sin\left(2 \pi \cdot \frac{\text{hour}}{24} \right)$$
+
 - Cos_Hour: cosine transform of hour in day in order to encode hour of day into a cyclical value, calculated by $$\text{Cos_Hour} =  \cos\left(2 \pi \cdot \frac{\text{hour}}{24} \right)$$
 
 **Rolling Window Features:**
