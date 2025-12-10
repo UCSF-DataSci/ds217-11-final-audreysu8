@@ -292,7 +292,7 @@ From the residuals plots, we can see that the residuals for both models are fair
 *Figure 3: Final visualizations of my explorations with the Chicago beach weather sensors dataset. The plot on the top left is a barplot comparing the test set MAE for Linear Regression and Random Forest Regressor. The plot on the top right is a barplot comparing the importance values for the top 10 most important features for the Random Forest Regressor model. The bottom two plots are residuals plots for both models.*
 
 ![Figure 4: Further Investigations of Air Temperature](output/q8_air_temp_visualizations.png)
-*Figure 4: Additional visualizations generated to explore seasonal, weekly, daily, and overall trends in Air Temperature. The plot on the top left displays monthly trends in Air Temperature (°C) over time. The plot on the top right displays weekly trends in Air Temperature (°C). The plot on the bottom left displays yearly trends on Air Temperature over time. The plot on the bottom right displays daily trends in Air Temperature (°C).*
+*Figure 4: Additional visualizations generated to explore seasonal, weekly, daily, and overall patterns in Air Temperature. The plot on the top left displays monthly trends in Air Temperature (°C) over time. The plot on the top right displays weekly trends in Air Temperature (°C). The plot on the bottom left displays yearly trends on Air Temperature over time. The plot on the bottom right displays daily patterns in Air Temperature (°C).*
 
 ### 4. Model Results
 
