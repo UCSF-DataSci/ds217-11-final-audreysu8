@@ -103,29 +103,29 @@ An interesting observation is that all of the columns that contained missing val
 **Cleaning Results:**
 - Number of rows before cleaning: 196,313
 - Missing Data Handling: all missing values were imputed using forward-fill 
-  - Air Temperature: 75 missing values handled
-  - Wet Bulb Temperature: 75947 missing values handled
-  - Rain Intensity: 75947 missing values handled
-  - Total Rain: 75947 missing values handled
-  - Precipitation Type: 75947 missing values handled 
-  - Barometric Pressure: 146 missing values handled
-  - Heading: 75947 missing values handled
+    - Air Temperature: 75 missing values handled
+    - Wet Bulb Temperature: 75947 missing values handled
+    - Rain Intensity: 75947 missing values handled
+    - Total Rain: 75947 missing values handled
+    - Precipitation Type: 75947 missing values handled 
+    - Barometric Pressure: 146 missing values handled
+    - Heading: 75947 missing values handled
 - Outlier Handling: capped outliers to have at most a z-score of magnitude 3 (3 standard deviations from the mean)
-  - Air Temperature: 296 outliers handled
-  - Wet Bulb Temperature: 487 outliers handled
-  - Humidity: 134 outliers handled 
-  - Rain Intensity: 1434 outliers handled 
-  - Interval Rain: 2298 outliers handled 
-  - Total Rain: 4023 outliers handled 
-  - Precipitation Type: 12657 outliers handled 
-  - Wind Speed: 27 outliers handled 
-  - Maximum Wind Speed: 20 outliers handled 
-  - Barometric Pressure: 87 outliers handled 
-  - Solar Radiation: 13 outliers handled 
-  - Battery Life: 6 outliers handled
+    - Air Temperature: 296 outliers handled
+    - Wet Bulb Temperature: 487 outliers handled
+    - Humidity: 134 outliers handled 
+    - Rain Intensity: 1434 outliers handled 
+    - Interval Rain: 2298 outliers handled 
+    - Total Rain: 4023 outliers handled 
+    - Precipitation Type: 12657 outliers handled 
+    - Wind Speed: 27 outliers handled 
+    - Maximum Wind Speed: 20 outliers handled 
+    - Barometric Pressure: 87 outliers handled 
+    - Solar Radiation: 13 outliers handled 
+    - Battery Life: 6 outliers handled
 - Number of duplicate rows removed: 0
 - Data Type Conversions:
-  - 'Measurement Timestamp' converted to datetime64[ns] format
+    - 'Measurement Timestamp' converted to datetime64[ns] format
 - Number of rows after cleaning: 196313
 
 The data cleaning I applied on the dataset was able to keep the dataset size the same as before while also addressing data quality issues. 
@@ -321,7 +321,7 @@ Below is a table comparing the performance of Linear Regression and Random Fores
 **Feature Importance Insights:**
 - The most important feature is "Is Summer", which alone accounts for 44.53% of all feature importance
 - The top two most important features are temporal features of "Is Summer" and "month"
- - These two features alone account for 83.15% of all feature importance
+    - These two features alone account for 83.15% of all feature importance
 - Seven of the top ten most important variables are temporal variables (e.g. month, year)
 - This indicates that temporal variables have more predictive power than weather variables and that air temperature demonstrates strong seasonal cycles
 - Three of the top ten variables are rolling windows of predictor variables, indicating that rolling window variables are also important for Air Temperature prediction
@@ -336,49 +336,49 @@ The analysis I conducted on the Chicago beach weather sensors dataset reveals se
 **Long-term Trends:**
 - Air Temperature remains fairly stable over the course of the Chicago beach weather sensors data which spans approximately 10 years and 7 months
 - Air Temperature follows repeating seasonal patterns every year
- - Although there may be some colder or warmer years, Air Temperature does not exhibit any noticeable overall decreasing or increasing trends over the course of the data
+    - Although there may be some colder or warmer years, Air Temperature does not exhibit any noticeable overall decreasing or increasing trends over the course of the data
 
 **Seasonal Patterns:**
 - Daily: Air Temperature follows a pattern that repeats every 24 hours
- - Air Temperature reaches its daily minimum at 6 AM and reaches its daily maximum at 5 PM
+    - Air Temperature reaches its daily minimum at 6 AM and reaches its daily maximum at 5 PM
 - Weekly: Air Temperature starts out higher at Day 0 (Monday) during the start of the week and reaches its peak on Tuesday
- - Air Temperature then decreases until it reaches its minimum on Saturday
- - Afterward, Air Temperature rises again
+    - Air Temperature then decreases until it reaches its minimum on Saturday
+    - Afterward, Air Temperature rises again
 - Monthly: Air Temperature follows seasonal patterns
- - Air Temperature is highest during summer months (June, July, August) and is lowest during winter months (December, January, February)
+    - Air Temperature is highest during summer months (June, July, August) and is lowest during winter months (December, January, February)
 
  **Temporal Relationships**:
 - Air Temperature variable follows seasonal patterns
- - "Is Summer" and "month" are the top two most important variables
+    - "Is Summer" and "month" are the top two most important variables
 - Air Temperature for Chicago's beaches is affected by weather conditions in Chicago's beaches in the previous hours and previous day
- - Seven hour rolling window features of weather conditions have high feature importance
+    - Seven hour rolling window features of weather conditions have high feature importance
 - Air Temperature follows daily and weekly cycles
- - "hour" and "day_of_week" have fairly high feature importance
+    - "hour" and "day_of_week" have fairly high feature importance
 - Air Temperature exhibits some fluctuation from year-to-year
 
 **Anomalies:**
 - Variables of Wet Bulb Temperature, Rain Intensity, Total Rain, Precipitation Type, and Heading have quite a few missing values, with 75,947 missing values each
 - Variable Precipitation Type has 12,657 outlier values
 - There are some hours between the start time and end time of the data where no data is recorded
- - It is likely that sensors weren't recording data during these times
+    - It is likely that sensors weren't recording data during these times
 
 ### 6. Limitations & Next Steps
 
 **Data Quality Issues**
 - 379956 missing values were addressed with a blanket method of imputing using Forward Fill
- - Given that this was a significant number of missing values, imputing large amounts of data points could negatively influence model results
+    - Given that this was a significant number of missing values, imputing large amounts of data points could negatively influence model results
 - My method of classifying outliers resulted in 21482 data points being classified as outliers
- - Quite a few data points were classified as being outliers, which seems implausible given the context of working with Chicago beach weather sensor data
- - I chose to cap these outlier values, which may have overadjusted the data and edited datapoints that weren't problematic 
+    - Quite a few data points were classified as being outliers, which seems implausible given the context of working with Chicago beach weather sensor data
+    - I chose to cap these outlier values, which may have overadjusted the data and edited datapoints that weren't problematic 
 - For certain hours between the start time of the data at 2015-04-25 09:00:00 and the end time of the data 2025-12-03 10:00:00, the sensors did not record data
- - These gaps make it harder to identify overall time series trends in the data 
+    - These gaps make it harder to identify overall time series trends in the data 
 - Only three beach weather sensors recorded data, limiting the spatial coverage of the data 
 
 **Model Limitations**
 - Residuals plots for both Linear Regression and Random Forest Regressor aren't fully randomly distributed and show heteroscedasticity, indicating that Linear Regression and Random Forest Regressor may not be the strongest models for predicting Air Temperature from Chicago beach weather sensors data
 - Top-performing model of Random Forest Regressor shows some overfitting
- - From training set to test set, R² Score for Random Forest Regressor decreases by 0.15154 RMSE increases by 1.68932, and MAE increases by 1.17029
- - Random Forest Regressor's performance decreases pretty significantly from training to test set 
+    - From training set to test set, R² Score for Random Forest Regressor decreases by 0.15154 RMSE increases by 1.68932, and MAE increases by 1.17029
+    - Random Forest Regressor's performance decreases pretty significantly from training to test set 
 - Top-performing model of Random Forest Regressor achieves an RMSE of 5.19591 °C, which is fairly large given that Air Temperature ranges from around -30 °C to 38 °C
 - Air Temperature predictions were generated based solely from data recorded at beaches along Chicago's Lake Michigan front, which means that results may not generalize well to other geographic locations 
 
@@ -391,7 +391,7 @@ The analysis I conducted on the Chicago beach weather sensors dataset reveals se
 - Compare performance of models against a baseline so that it can be better assessed whether a given model's results are reliable or not
 - Include more error metrics when evaluating performance of models to better assess performance of each model
 - Conduct more thorough investigations of when models are making errors and when errors are more pronounced
- - For example, I would care more that a model is predicting Air Temperature more accurately during the daytime, as I am more likely to rely on Air Temperature predictions during the day, rather than at nighttime when I am sleeping
+    - For example, I would care more that a model is predicting Air Temperature more accurately during the daytime, as I am more likely to rely on Air Temperature predictions during the day, rather than at nighttime when I am sleeping
 - Conduct further analysis on missing values in the Chicago beach weather sensors data and possible patterns in missing values
 
 **How Results Could be Validated or Extended**
